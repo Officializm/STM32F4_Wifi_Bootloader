@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"esptakedatafrom\startup_stm32f401xe.o"
+"esptakedatafrom\main.o"
+"esptakedatafrom\stm32f4xx_it.o"
+"esptakedatafrom\stm32f4xx_hal_msp.o"
+"esptakedatafrom\stm32f4xx_hal_crc.o"
+"esptakedatafrom\stm32f4xx_hal_tim.o"
+"esptakedatafrom\stm32f4xx_hal_tim_ex.o"
+"esptakedatafrom\stm32f4xx_hal_uart.o"
+"esptakedatafrom\stm32f4xx_hal_rcc.o"
+"esptakedatafrom\stm32f4xx_hal_rcc_ex.o"
+"esptakedatafrom\stm32f4xx_hal_flash.o"
+"esptakedatafrom\stm32f4xx_hal_flash_ex.o"
+"esptakedatafrom\stm32f4xx_hal_flash_ramfunc.o"
+"esptakedatafrom\stm32f4xx_hal_gpio.o"
+"esptakedatafrom\stm32f4xx_hal_dma_ex.o"
+"esptakedatafrom\stm32f4xx_hal_dma.o"
+"esptakedatafrom\stm32f4xx_hal_pwr.o"
+"esptakedatafrom\stm32f4xx_hal_pwr_ex.o"
+"esptakedatafrom\stm32f4xx_hal_cortex.o"
+"esptakedatafrom\stm32f4xx_hal.o"
+"esptakedatafrom\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "EspTakeDataFrom\EspTakeDataFrom.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "EspTakeDataFrom.map" -o EspTakeDataFrom\EspTakeDataFrom.axf
